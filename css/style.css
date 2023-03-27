@@ -1,0 +1,82 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "Handjet";
+  /* [EGRD\,ESHP\,wght] */
+  src: url("../font/Handjet.woff2") format("woff2-variations");
+}
+[data-step="1"] > * {
+  font-family: "Handjet";
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  overflow-y: hidden;
+}
+
+@keyframes fallingFont {
+  from {
+    transform: translateY(-5vh);
+  }
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+@keyframes fallingFont-LR {
+  from {
+    transform: rotate(-32deg);
+  }
+  to {
+    transform: rotate(328deg);
+  }
+}
+@keyframes fallingFont-RL {
+  from {
+    transform: rotate(27deg);
+  }
+  to {
+    transform: rotate(-323deg);
+  }
+}
+
+.falling-font-0 {
+  animation: fallingFont 3s 2s linear infinite forwards;
+  animation: fallingFont-LR 30s linear;
+  left: 5%;
+}
+.falling-font-1 {
+  animation: fallingFont 4s linear infinite forwards;
+  left: 13%;
+}
+.falling-font-2 {
+  animation: fallingFont 3s 2s linear infinite forwards;
+  left: 21%;
+}
+.falling-font-3 {
+  animation: fallingFont 5s linear infinite forwards;
+  left: 29%;
+}
+.falling-font-4 {
+  animation: fallingFont 3s 1s linear infinite forwards;
+  left: 57%;
+}
+.falling-font-5 {
+  animation: fallingFont 4s linear infinite forwards;
+  left: 67%;
+}
+.falling-font-6 {
+  animation: fallingFont 5s 1s linear infinite forwards;
+  left: 76%;
+}
+.falling-font-7 {
+  animation: fallingFont 3s linear infinite forwards;
+  left: 87%;
+}
+.falling-font-8 {
+  animation: fallingFont 3s 2s linear infinite forwards;
+  left: 40%;
+}
+.falling-font-9 {
+  animation: fallingFont 4s linear infinite forwards;
+  left: 46%;
+}
