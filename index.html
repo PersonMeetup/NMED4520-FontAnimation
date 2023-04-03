@@ -4,39 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+		<script type="module">
+      document.documentElement.classList.remove("no-js");
+      document.documentElement.classList.add("js");
+    </script>
+
     <meta name="description" content="" />
     <link rel="stylesheet" href="./css/style.css" />
+
+		<script type="text/javascript" src="https://unpkg.com/enter-view"></script>
+    <script type="text/javascript" src="./scroll.js"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <header></header>
+    <header><h1>Hello, world!</h1></header>
     <main>
       <section class="scroll">
-        <div class="step" data-step="0">
-          <!-- Introduction; a list of story ideas that begin slipping as they
+        <div class="step intro">
+					<!-- Introduction; a list of story ideas that begin slipping as they
             fill the viewport. The animations formally begin when one sentence
             slips and bumps a "the" from the sentence below, causing it to fall. -->
+					<p class="intro--start">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+					<div class="intro--solo">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+						<p>Libero mollitia necessitatibus amet?</p>
+						<p>The lightbulb existed before light.</p>
+					</div>
+					<div class="intro--double">
+						<p>How to stop ants from learning philosophy and taking over Belarus.</p>
+						<p>Ut accusamus obcaecati quod cum eaque non dolore.</p>
+						<p>Ipsa soluta at ipsam nesciunt.</p>
+						<p>Earum tenetur ea vero mollitia est facilis perspiciatis?</p>
+					</div>
+					<div class="intro--triple">
+						<p>Possimus, quod.</p>
+						<p>Encrypted communication is not as secure as unencrypted communication since encryption can be broken with enough computing power.</p>
+						<p>Reprehenderit tempora voluptatum aspernatur.</p>
+						<p>Possimus, quod.</p>
+						<p>Minima numquam ipsam nisi ipsa molestias sunt rerum esse.</p>
+						<p>Reprehenderit tempora voluptatum aspernatur.</p>
+					</div>
+					<div class="intro__collide">
+						<p class="intro--triple">Gorilla gule applied liberally to heal wounds</p>
+						<p class="intro--end">Add minimum salt content to <span id="intro__the">the</span> pot, then begin to stir.</p>
+					</div>
+					<div class="intro__fall">
+					</div>
         </div>
-        <div class="step" data-step="1">
-          <span class="falling-font-0">Lorem.</span
-          ><span class="falling-font-1">Eos!</span
-          ><span class="falling-font-2">Ut.</span
-          ><span class="falling-font-3">Numquam!</span
-          ><span class="falling-font-4">Itaque?</span
-          ><span class="falling-font-5">Eos?</span
-          ><span class="falling-font-6">At.</span
-          ><span class="falling-font-7">Deserunt?</span
-          ><span class="falling-font-8">Numquam.</span
-          ><span class="falling-font-9">Accusamus.</span>
-          <!-- "The" falls down the page as a collection of words and sentences
+        <div class="step fall">
+					<!-- "The" falls down the page as a collection of words and sentences
             fall alongside it. -->
+					
+					<div class="fall__div">
+						<span id="fall__the">the</span>
+						<span class="fall__font fall__font--fast fall__font--bigdelay">Lorem.</span>
+						<span class="fall__font fall__font--midd ">Sans</span>
+						<span class="fall__font fall__font--fast fall__font--bigdelay">Ut.</span>
+						<span class="fall__font fall__font--slow ">Numquam!</span>
+						<span class="fall__font fall__font--fast fall__font--smldelay">Itaque?</span>
+						<span class="fall__font fall__font--midd ">Eos?</span>
+						<span class="fall__font fall__font--slow fall__font--smldelay">At.</span>
+						<span class="fall__font fall__font--fast ">Deserunt?</span>
+						<span class="fall__font fall__font--slow fall__font--bigdelay">Numquam.</span>
+						<span class="fall__font fall__font--midd ">Accusamus.</span>
+					</div>
         </div>
-        <div class="step" data-step="2">
+        <div class="step landing">
           <!-- "The" falls into a pile of rubbish words. It's a seemingly
             mechanical area, as one conveyor belt dumps even more words into 
             the pile. -->
         </div>
-        <div class="step" data-step="3">
+        <div class="step">
           <!-- Finally resting within the pile, "The" begins to take root. -->
         </div>
       </section>

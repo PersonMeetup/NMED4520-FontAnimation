@@ -5,23 +5,79 @@
   /* [EGRD\,ESHP\,wght] */
   src: url("../font/Handjet.woff2") format("woff2-variations");
 }
-[data-step="1"] > * {
-  font-family: "Handjet";
-  font-size: 2em;
-  position: absolute;
-  top: 0;
-  overflow-y: hidden;
+
+.step {
+	background-color: rgb(150, 150, 207);
+	margin: 3em;
+}
+
+.intro {
+	font-size: 2em;
+	text-align: center;
+	
+}
+
+.intro--solo,
+.intro--double,
+.intro--triple {
+	display: flex;
+	flex-direction: column;
+}
+
+.intro--solo {
+	margin-top: 40em;
+	gap: 40em;
+	transform: translateY(0px);
+}
+
+.intro--double {
+	margin-top: 20em;
+	gap: 20em;
+}
+
+.intro--triple {
+	margin-top: 10em;
+	gap: 10em;
+}
+
+.intro--end {
+	margin: 40vh 0;
+	transform: translateY(0px);
+}
+
+.intro__fall {
+	height: 400px;
+}
+
+.intro__the {
+	position: relative;
 }
 
 @keyframes fallingFont {
   from {
-    transform: translateY(-5vh);
+    transform: translateY(-15vh);
   }
   to {
-    transform: translateY(105vh);
+    transform: translateY(115vh);
   }
 }
 
+@keyframes fallingFont-trans {
+	0% {
+		opacity: 0;
+	}
+	15% {
+		opacity: 1;
+	}
+	85% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Unable to rotate with other animation settings? */
 @keyframes fallingFont-LR {
   from {
     transform: rotate(-32deg);
@@ -39,7 +95,61 @@
   }
 }
 
-.falling-font-0 {
+.fall {
+	height: 300em;
+}
+
+.fall__div {
+	position: sticky;
+	top: 0;
+	background-color: aqua;
+	height: 110vh;
+}
+
+#fall__the {
+	position: relative;
+	left: 50%;
+	right: 50%;
+	font-size: 2em;
+	top: -15em;
+	opacity: 0;
+}
+
+.fall__font {
+  font-family: "Handjet";
+  font-size: 2em;
+  position: relative;
+	display: inline-block;
+  top: 0;
+  overflow-y: hidden;
+	animation: fallingFont linear infinite forwards, fallingFont-trans linear infinite forwards;
+}
+
+.fall__font--fast {
+	animation-duration: 4s;
+}
+.fall__font--midd {
+	animation-duration: 5s;
+}
+.fall__font--slow {
+	animation-duration: 6s;
+}
+
+.fall__font--smldelay {
+	animation-delay: 1s;
+}
+.fall__font--bigdelay {
+	animation-delay: 2s;
+}
+
+.fall__font--LR {
+	animation: fallingFont-LR 30s linear infinite forwards;
+}
+.fall__font--RL {
+	animation: fallingFont-RL 30s linear infinite forwards;
+}
+
+/*.falling-font-0 {
   animation: fallingFont 3s 2s linear infinite forwards;
   animation: fallingFont-LR 30s linear;
   left: 5%;
@@ -79,4 +189,8 @@
 .falling-font-9 {
   animation: fallingFont 4s linear infinite forwards;
   left: 46%;
+}*/
+
+.landing {
+	height: 100vh;
 }
