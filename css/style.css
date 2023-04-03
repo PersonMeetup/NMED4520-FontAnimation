@@ -1,9 +1,15 @@
 @import "reset.css";
+@import "intro.css";
+@import "fall.css";
 
 @font-face {
-  font-family: "Handjet";
-  /* [EGRD\,ESHP\,wght] */
-  src: url("../font/Handjet.woff2") format("woff2-variations");
+	font-family: "Spline Sans";
+	src: url("../font/SplineSans.woff2") format("woff2-variations");
+	font-weight: 300 700;
+}
+
+main {
+	font-family: "Spline Sans";
 }
 
 .step {
@@ -11,186 +17,17 @@
 	margin: 3em;
 }
 
-.intro {
-	font-size: 2em;
-	text-align: center;
-	
-}
-
-.intro--solo,
-.intro--double,
-.intro--triple {
-	display: flex;
-	flex-direction: column;
-}
-
-.intro--solo {
-	margin-top: 40em;
-	gap: 40em;
-	transform: translateY(0px);
-}
-
-.intro--double {
-	margin-top: 20em;
-	gap: 20em;
-}
-
-.intro--triple {
-	margin-top: 10em;
-	gap: 10em;
-}
-
-.intro--end {
-	margin: 40vh 0;
-	transform: translateY(0px);
-}
-
-.intro__fall {
-	height: 400px;
-}
-
-.intro__the {
-	position: relative;
-}
-
-@keyframes fallingFont {
-  from {
-    transform: translateY(-15vh);
-  }
-  to {
-    transform: translateY(115vh);
-  }
-}
-
-@keyframes fallingFont-trans {
-	0% {
-		opacity: 0;
-	}
-	15% {
-		opacity: 1;
-	}
-	85% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
-/* Unable to rotate with other animation settings? */
-@keyframes fallingFont-LR {
-  from {
-    transform: rotate(-32deg);
-  }
-  to {
-    transform: rotate(328deg);
-  }
-}
-@keyframes fallingFont-RL {
-  from {
-    transform: rotate(27deg);
-  }
-  to {
-    transform: rotate(-323deg);
-  }
-}
-
-.fall {
-	height: 300em;
-}
-
-.fall__div {
-	position: sticky;
-	top: 0;
-	background-color: aqua;
-	height: 110vh;
-}
-
-#fall__the {
-	position: relative;
-	left: 50%;
-	right: 50%;
-	font-size: 2em;
-	top: -15em;
-	opacity: 0;
-}
-
-.fall__font {
-  font-family: "Handjet";
-  font-size: 2em;
-  position: relative;
-	display: inline-block;
-  top: 0;
-  overflow-y: hidden;
-	animation: fallingFont linear infinite forwards, fallingFont-trans linear infinite forwards;
-}
-
-.fall__font--fast {
-	animation-duration: 4s;
-}
-.fall__font--midd {
-	animation-duration: 5s;
-}
-.fall__font--slow {
-	animation-duration: 6s;
-}
-
-.fall__font--smldelay {
-	animation-delay: 1s;
-}
-.fall__font--bigdelay {
-	animation-delay: 2s;
-}
-
-.fall__font--LR {
-	animation: fallingFont-LR 30s linear infinite forwards;
-}
-.fall__font--RL {
-	animation: fallingFont-RL 30s linear infinite forwards;
-}
-
-/*.falling-font-0 {
-  animation: fallingFont 3s 2s linear infinite forwards;
-  animation: fallingFont-LR 30s linear;
-  left: 5%;
-}
-.falling-font-1 {
-  animation: fallingFont 4s linear infinite forwards;
-  left: 13%;
-}
-.falling-font-2 {
-  animation: fallingFont 3s 2s linear infinite forwards;
-  left: 21%;
-}
-.falling-font-3 {
-  animation: fallingFont 5s linear infinite forwards;
-  left: 29%;
-}
-.falling-font-4 {
-  animation: fallingFont 3s 1s linear infinite forwards;
-  left: 57%;
-}
-.falling-font-5 {
-  animation: fallingFont 4s linear infinite forwards;
-  left: 67%;
-}
-.falling-font-6 {
-  animation: fallingFont 5s 1s linear infinite forwards;
-  left: 76%;
-}
-.falling-font-7 {
-  animation: fallingFont 3s linear infinite forwards;
-  left: 87%;
-}
-.falling-font-8 {
-  animation: fallingFont 3s 2s linear infinite forwards;
-  left: 40%;
-}
-.falling-font-9 {
-  animation: fallingFont 4s linear infinite forwards;
-  left: 46%;
-}*/
-
 .landing {
-	height: 100vh;
+	height: 200vh;
+}
+
+.end {
+	height: 300vh;
+}
+
+#end__the {
+	position: relative;
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 480;
 }

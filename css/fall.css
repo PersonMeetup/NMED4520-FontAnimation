@@ -1,0 +1,93 @@
+@keyframes fallingFont {
+	from {
+		transform: translateY(-15vh);
+	}
+	to {
+		transform: translateY(115vh);
+	}
+}
+
+@keyframes fallingFont-trans {
+	0% {
+		opacity: 0;
+	}
+	15% {
+		opacity: 1;
+	}
+	85% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fallingFont-LR {
+	from {
+		transform: translateY(-15vh) rotate(-32deg);
+	}
+	to {
+		transform: translateY(115vh) rotate(328deg);
+	}
+}
+@keyframes fallingFont-RL {
+	from {
+		transform: translateY(-15vh) rotate(27deg);
+	}
+	to {
+		transform: translateY(115vh) rotate(-323deg);
+	}
+}
+
+.fall {
+	height: 300em;
+	font-weight: 350;
+}
+
+.fall__div {
+	position: sticky;
+	top: 0;
+	/*background-color: aqua;*/
+	height: 110vh;
+}
+
+#fall__the {
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	top: -15em;
+	font-size: 3rem;
+	font-weight: 480;
+	opacity: 0;
+}
+
+.fall__font {
+	font-size: 1rem;
+	position: relative;
+	display: inline-block;
+	top: 0;
+}
+
+.fall__font--LR {
+	animation: fallingFont-LR linear infinite forwards, fallingFont-trans linear infinite forwards;
+}
+.fall__font--RL {
+	animation: fallingFont-RL linear infinite forwards, fallingFont-trans linear infinite forwards;
+}
+
+.fall__font--fast {
+	animation-duration: 4s;
+}
+.fall__font--midd {
+	animation-duration: 5s;
+}
+.fall__font--slow {
+	animation-duration: 6s;
+}
+
+.fall__font--smldelay {
+	animation-delay: 1s;
+}
+.fall__font--bigdelay {
+	animation-delay: 2s;
+}

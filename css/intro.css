@@ -1,0 +1,53 @@
+.intro {
+	font-size: 3rem;
+	font-weight: 480;
+	text-align: center;
+}
+
+.intro--start {
+	margin: 40vh 0;
+}
+
+.intro--solo,
+.intro--double,
+.intro--triple {
+	display: flex;
+	flex-direction: column;
+}
+
+.intro--solo {
+	margin-top: 40em;
+	gap: 40em;
+	transform: translateY(0px);
+}
+
+.intro--double {
+	margin-top: 20em;
+	gap: 20em;
+}
+
+.intro--triple {
+	margin-top: 10em;
+	gap: 10em;
+}
+
+.intro__collide {
+	margin-top: 10em;
+	height: 12.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 10em;
+}
+
+.intro--end {
+	transform: translateY(0px);
+}
+
+.intro__fall {
+	height: 400px;
+}
+
+#intro__the {
+	position: relative;
+	display: inline-block;
+}
