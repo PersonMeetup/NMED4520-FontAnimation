@@ -1,0 +1,30 @@
+.end {
+	height: 300vh;
+	background-color: #1a1a1a;
+}
+
+.end--main {
+	position: sticky;
+	top: 0;
+}
+
+.end__graphic {
+	position: relative;
+}
+
+#end__the {
+	position: relative;
+	top: 63vh;
+	left: 47.8%;
+	rotate: -24deg;
+	display: inline-block;
+	font-size: 6rem;
+	color: #fff;
+}
+
+#root1,
+#root2,
+#root3 {
+	stroke-dasharray: 27px;
+	stroke-dashoffset: 28px;
+}

@@ -44,6 +44,41 @@ function init() {
 			}
 		},
 	});
+
+	/* Landing Events */
+	enterView({
+		selector: ".landing",
+		offset: 1,
+		progress: (el, progress) => {
+			const theLanding = document.getElementById("landing__the");
+
+			theLanding.style.top = `${-15 + progress * 150}vh`;
+			theLanding.style.rotate = `${-1.5 + 2 * progress}turn`;
+
+			if (progress >= 0.6 || progress === 0) {
+				theLanding.style.opacity = 0;
+			} else {
+				theLanding.style.opacity = 1;
+			}
+		},
+	});
+
+	/* End Events */
+	enterView({
+		selector: ".end",
+		offset: 1,
+		progress: (el, progress) => {
+			const theEnd = document.getElementById("end__the");
+			const root1 = document.getElementById("root1");
+			const root2 = document.getElementById("root2");
+			const root3 = document.getElementById("root3");
+
+			theEnd.style.fontWeight = 300 + progress * 220;
+			root1.style.strokeDashoffset = 28 - 27 * progress;
+			root2.style.strokeDashoffset = 28 - 27 * progress;
+			root3.style.strokeDashoffset = 28 - 27 * progress;
+		},
+	});
 }
 
 init();

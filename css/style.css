@@ -1,6 +1,8 @@
 @import "reset.css";
 @import "intro.css";
 @import "fall.css";
+@import "landing.css";
+@import "end.css";
 
 @font-face {
 	font-family: "Spline Sans";
@@ -8,26 +10,24 @@
 	font-weight: 300 700;
 }
 
+header svg {
+	color: #000;
+	display: block;
+	margin-inline: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 4em;
+}
+
 main {
 	font-family: "Spline Sans";
 }
 
-.step {
-	background-color: rgb(150, 150, 207);
-	margin: 3em;
+footer {
+	border-top: #000 dashed 0.5em;
 }
 
-.landing {
-	height: 200vh;
-}
-
-.end {
-	height: 300vh;
-}
-
-#end__the {
-	position: relative;
-	display: inline-block;
-	font-size: 3rem;
-	font-weight: 480;
+footer div {
+	margin-inline: auto;
+	max-width: 128ch;
 }

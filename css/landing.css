@@ -1,0 +1,66 @@
+.landing {
+	height: 250vh;
+}
+
+#landing__the {
+	opacity: 0;
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	font-size: 1.5rem;
+	font-weight: 480;
+	color: #666;
+}
+
+.landing--frame {
+	position: sticky;
+	top: 0;
+	background-image: url("../landing.svg");
+	background-repeat: repeat-x;
+	background-position-y: bottom;
+	height: 100vh;
+}
+
+.landing--graphic {
+	float: right;
+	padding-top: 10vh;
+}
+
+@keyframes chuckedWords {
+	20% {
+		offset-distance: 13%;
+	}
+	40% {
+		offset-distance: 18%;
+	}
+	60% {
+		offset-distance: 25%;
+	}
+	70% {
+		offset-distance: 40%;
+	}
+	80% {
+		offset-distance: 55%;
+	}
+	100% {
+		offset-distance: 95%;
+	}
+}
+
+.landing__dumped,
+.landing__conveyor {
+	position: relative;
+}
+
+.landing__dumped {
+	color: #1a1a1a;
+	position: absolute;
+	offset-path: path(
+		"m 266.9238 176.1756 c -14.9238 -28.1756 -50.2869 -86.007 -85.8681 -95.3673 c -26.0691 -6.858 -47.0557 2.1917 -78.0557 22.1917 c -40 34 -58.5752 77.212 -88 258 C 3 433 7 561 0 850"
+	);
+	animation: chuckedWords 1s linear infinite forwards;
+}
+
+.landing__conveyor {
+	width: 600px;
+}
