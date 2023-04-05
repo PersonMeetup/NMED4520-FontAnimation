@@ -1,13 +1,27 @@
-@import "reset.css";
-@import "intro.css";
-@import "fall.css";
-@import "landing.css";
-@import "end.css";
+@import "./reset.css";
+@import "./intro.css";
+@import "./fall.css";
+@import "./landing.css";
+@import "./end.css";
 
 @font-face {
 	font-family: "Spline Sans";
 	src: url("../font/SplineSans.woff2") format("woff2-variations");
 	font-weight: 300 700;
+}
+@font-face {
+	font-family: "Radio Canada";
+	font-style: normal;
+	src: url("../fonts/RadioCanada.woff2") format("woff2-variations");
+	font-weight: 300 700;
+	font-stretch: 75 100;
+}
+@font-face {
+	font-family: "Radio Canada";
+	font-style: italic;
+	src: url("../fonts/RadioCanada-Italic.woff2") format("woff2-variations");
+	font-weight: 300 700;
+	font-stretch: 75 100;
 }
 
 header svg {
@@ -24,6 +38,7 @@ main {
 }
 
 footer {
+	font-family: "Radio Canada";
 	border-top: #000 dashed 0.5em;
 }
 
