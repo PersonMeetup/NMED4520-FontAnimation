@@ -12,14 +12,14 @@
 @font-face {
 	font-family: "Radio Canada";
 	font-style: normal;
-	src: url("../fonts/RadioCanada.woff2") format("woff2-variations");
+	src: url("../font/RadioCanada.woff2") format("woff2-variations");
 	font-weight: 300 700;
 	font-stretch: 75 100;
 }
 @font-face {
 	font-family: "Radio Canada";
 	font-style: italic;
-	src: url("../fonts/RadioCanada-Italic.woff2") format("woff2-variations");
+	src: url("../font/RadioCanada-Italic.woff2") format("woff2-variations");
 	font-weight: 300 700;
 	font-stretch: 75 100;
 }
@@ -42,7 +42,28 @@ footer {
 	border-top: #000 dashed 0.5em;
 }
 
+footer h2 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 1em 0;
+}
+
+footer p {
+	font-stretch: semi-condensed;
+	margin-bottom: 0.75em;
+}
+
 footer div {
 	margin-inline: auto;
-	max-width: 128ch;
+	max-width: 96ch;
+}
+
+.footer__credits {
+	margin-top: 4rem;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.footer__credits p {
+	margin-bottom: 0.2em;
 }
