@@ -5,17 +5,20 @@
 
 .end--main {
 	position: sticky;
+	height: 100vh;
 	top: 0;
 }
 
 .end__graphic {
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 #end__the {
 	position: relative;
-	top: 63vh;
-	left: 47.8%;
+	bottom: calc(-85% + 17vw);
+	left: calc(22% + 26vw);
 	rotate: -24deg;
 	display: inline-block;
 	font-size: 6rem;

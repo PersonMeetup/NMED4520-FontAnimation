@@ -24,13 +24,22 @@
 	font-stretch: 75 100;
 }
 
+header {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
 header svg {
 	color: #000;
 	display: block;
-	margin-inline: auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	width: 4em;
+	height: 4em;
+}
+
+header img {
+	padding: 0.5rem;
+	height: 4em;
 }
 
 main {
@@ -39,13 +48,17 @@ main {
 
 footer {
 	font-family: "Radio Canada";
+	font-weight: 350;
+	font-stretch: 87.5%;
+	font-size: 1.125rem;
 	border-top: #000 dashed 0.5em;
+	padding: 2em;
 }
 
 footer h2 {
 	text-align: center;
 	font-size: 2rem;
-	margin: 1em 0;
+	margin-bottom: 2rem;
 }
 
 footer p {

@@ -23,7 +23,8 @@
 
 .landing--graphic {
 	float: right;
-	padding-top: 10vh;
+	position: relative;
+	bottom: -25vh;
 }
 
 @keyframes chuckedWords {
